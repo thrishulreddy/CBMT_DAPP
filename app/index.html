@@ -13,17 +13,23 @@
 <div class="form-group">
  <label for="inputSuccess2">From Currency:</label>
 <input type="text" class="form-con
-trol" id="inputSuccess2">
+trol" id="fromCurrency">
       <span class="glyphicon glyphicon-ok form-control-feedback"></span>
     </div>
 <div class="form-group">
  <label for="inputSuccess2">To Currency:</label>
 <input type="text" class="form-con
-trol" id="inputSuccess2">
+trol" id="toCurrency">
       <span class="glyphicon glyphicon-ok form-control-feedback"></span>
     </div>
 <div class="form-group">
-<button type="button" class="btn btn-success" onclick="getToken()">Get:</button>
+ <label for="inputSuccess2">Amount:</label>
+<input type="text" class="form-con
+trol" id="amt">
+      <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+    </div>	
+<div class="form-group">
+<button type="button" class="btn btn-success" onclick="getToken()">Get Tokens:</button>
 <input id="get" class="form-con
 trol" readonly="readonly" type="text" />
 </div>
@@ -33,31 +39,34 @@ trol" readonly="readonly" type="text" />
 trol" readonly="readonly" type="text" />
 </div>
 <div class="form-group">
+<button type="button" class="btn btn-success"  onclick="getRate()">Get Conversion Rate:</button>
+</div>
+<div class="form-group">
 <button type="button" class="btn btn-success"  onclick="getUprice()">Get Uprice:</button>
-<input id="balance" class="form-con
+<input id="rate" class="form-con
 trol" readonly="readonly" type="text" />
 </div>
 <div class="form-group">
  <label for="inputSuccess2">Send:</label>
 <input type="text" class="form-con
-trol" id="inputSuccess2">
+trol" id="send">
       <span class="glyphicon glyphicon-ok form-control-feedback"></span>
     </div>
 <div class="form-group">
  <label for="inputSuccess2">Fee:</label>
-<input type="text" class="form-con
-trol" id="inputSuccess2" value="10">
+<input type="fee" class="form-con
+trol" id="inputSuccess2" readonly="readonly" value="10">
       <span class="glyphicon glyphicon-ok form-control-feedback"></span>
     </div>
 <div class="form-group">
 <button type="button" class="btn btn-success" onclick="transfer()"> To Address:</button>
-<input id="balance" class="form-con
+<input id="toAddress" class="form-con
 trol" readonly="readonly" type="text" />
 </div>
 <div class="form-group">
  <label for="inputSuccess2">Received:</label>
 <input type="text" class="form-con
-trol" id="inputSuccess2">
+trol" id="received" readonly="readonly">
       <span class="glyphicon glyphicon-ok form-control-feedback"></span>
     </div>
 </body>
