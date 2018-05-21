@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cross Border Money Transfer</title>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<body class="container">
+<p>&nbsp;</p>
+<h1>Cross Border Money Transfer</h1>
+<div id="address">&nbsp;</div>
+<div class="table-responsive">
+<h3>From Currency: <input id="fromCurrency" type="text"/></h3>
+<h3>To Currency: <input id="toCurrency" type="text"/></h3>
+<h3>Amount: <input id="amt" type="text"/></h3>
+<button type="button" onclick="getToken()">Get Tokens :</button> <input id="get" readonly="readonly" type="text" />
+  <br/>
+  <br/>
+<button type="button"  onclick="getBalance()">Get Balance</button> <input id="balance" readonly="readonly" type="text" />
+<br/>
+ <br/>
+<button type="button"  onclick="getRate()">Get Rate</button>
+<br/>
+<br/>
+<button type="button"  onclick="getUprice()">Get Uprice</button> <input id="rate" readonly="readonly" type="text" />
+<h3>Send: <input id="send" type="text" /></h3>
+<h3>Fee: <input id="fee" type="text" />10</h3>
+<h3>To Address: <input id="toAddress" type="text" /></h3>
+ <button type="button"  onclick="transfer()"> Transfer </button>
+<h3>Received: <input id="received" type="text" /></h3>
+</body>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="app.js"></script>
+</html>
